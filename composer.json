@@ -1,0 +1,17 @@
+{
+    "name": "zhangpeng/express",
+    "description": "快递鸟的使用，根据快递单号查询物流信息",
+    "type": "library",
+    "keywords": ["快递鸟", "订单号"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "张朋",
+            "email": "523631013@qq.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.4.0"
+    }
+}
