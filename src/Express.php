@@ -59,8 +59,6 @@ class Express
         return $result['Reason'];
     }
 
-
-
     private function sendPost($url, $datas)
     {
         $temps = array();
