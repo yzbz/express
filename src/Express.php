@@ -53,8 +53,13 @@ class Express
         );
         $datas['DataSign'] = $this->encrypt($requestData, $this->app_key);
         $result = $this->sendPost($this->req_url, $datas);
-        return $result;
+        if ($result['Success'] == true) {
+            return ['trace' => $result['Traces'], 'state' => $result['State'], 'express_name' => $data['Shippers'][0]['ShipperName']];
+        }
+        return $result['Reason'];
     }
+
+
 
     private function sendPost($url, $datas)
     {
